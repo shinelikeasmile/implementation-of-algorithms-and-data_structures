@@ -28,3 +28,12 @@ This repository contains the implementations of algorithms and data structures w
 - Algorithm : an algorithm is the step-by-step unambiguous instructions to solve a given problem.
   - Algorithm analysis helps us to determine which algorithm is the most efficient in terms of time and space consumed.
   - Running time analysis is the process of determining how processing time increases as the size of the problem(input size)       increases.
+  -  ![relationship between different rate of growth](/images/rate_of_growth.png)
+  
+- Types of Analysis
+  - *worst case* : input for which the algorithm takes long time
+  - *best case* : input for which the algorithm takes least time
+  - *average case* : input for which the algorithm takes average time
+  
+- Asymptotic notation 
+  
