@@ -36,4 +36,10 @@ This repository contains the implementations of algorithms and data structures w
   - *average case* : input for which the algorithm takes average time
   
 - Asymptotic notation 
+  - ![asymptotic notation](/images/asymptotic.png)
+  - Big-O notation
+    - this notation gives the tight upper bound of the given function f(n).
+    - represented as f(n) = O(g(n)) 
+    - g(n) gives the maximum rate of growth for f(n) at larger values of n.
+    -
   
