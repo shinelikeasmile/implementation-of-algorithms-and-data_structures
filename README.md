@@ -55,4 +55,17 @@ This repository contains the implementations of algorithms and data structures w
     - represented as f(n) = omega(g(n))
     - at larger values of n, the tighter lower bound of f(n) is g(n).
     - omega(g(n)):{f(n):there exist positive constants c & n<sub>0</sub> such that 0<=c*g(n)<=f(n) for all n>=n<sub>0</sub>}
-    - 
+    - find lower bound for f(n)=5n<sup>2</sup>
+      - solution: 
+      - there exists c,n<sub>0</sub> such that : 0<=cn<sup>2</sup><=5n<sup>2</sup> => cn<sup>2</sup><=5n<sup>2</sup> => c=5 and n<sub>0</sub>=1
+      - there fore 5n<sup>2</sup> = omega(n<sup>2</sup>) with c= 5 and n<sub>0</sub>=1
+    - prove f(n) = 100n + 5 is not equal to omega(n<sup>2</sup>).
+      - there exists c,n<sub>0</sub> such that:0<=cn<sup>2</sup><=100n+5
+      - 100n+5 <= 100n+5n for all n>=1 = 105n
+      - cn<sup>2</sup> <= 105n => n(cn-105) <= 0
+      - since n is positive => cn-105 <= 0 => n <= 105/c
+      - contradiction: n cannot be smaller than a constant.
+    - 2n = omega(n) , n<sup>3</sup> = omega(n<sup>3</sup>), logn = omega(logn)
+    
+      
+      
