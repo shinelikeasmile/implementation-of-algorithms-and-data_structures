@@ -74,7 +74,10 @@ This repository contains the implementations of algorithms and data structures w
     - theta notation is defined as theta(g(n)) = {f(n):there exist positive constants c1,c2,n<sub>0</sub> such that 0<=c1g(n)<=f(n)<=c2g(n) for all n>=n<sub>0</sub> } 
     - g(n) is asymptotic tight bound for f(n). theta(g(n)) is the set of functions with the same order of growth as g(n).
     - ![theta function](images/theta.png)
-    
+    - find theta bound for f(n)=n<sup>2</sup>/2 - n/2
+      - solution:  n<sup>2</sup>/5 <= n<sup>2</sup>/2 - n/2 <= n<sup>2</sup> , for all , n>=2
+      - n<sup>2</sup>/2 - n/2 = theta(n<sup>2</sup>) with c1 = 1/5 , c2 = 1 and n<sub>0</sub> = 2
+    - 
     
       
       
