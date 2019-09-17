@@ -77,7 +77,10 @@ This repository contains the implementations of algorithms and data structures w
     - find theta bound for f(n)=n<sup>2</sup>/2 - n/2
       - solution:  n<sup>2</sup>/5 <= n<sup>2</sup>/2 - n/2 <= n<sup>2</sup> , for all , n>=2
       - n<sup>2</sup>/2 - n/2 = theta(n<sup>2</sup>) with c1 = 1/5 , c2 = 1 and n<sub>0</sub> = 2
-    - 
+    - prove n is not equal to theta(n<sup>2</sup>)
+      - c1n<sup>2</sup> <= n <= c2n<sup>2</sup> => only holds for : n<=1/c1.(contradiction)
+    - prove n is not equal to theta(logn)
+      - c1logn <= n <= c2logn => c2 >= n/logn - impossible
     
       
       
