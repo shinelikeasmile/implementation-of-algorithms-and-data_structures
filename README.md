@@ -66,6 +66,15 @@ This repository contains the implementations of algorithms and data structures w
       - since n is positive => cn-105 <= 0 => n <= 105/c
       - contradiction: n cannot be smaller than a constant.
     - 2n = omega(n) , n<sup>3</sup> = omega(n<sup>3</sup>), logn = omega(logn)
+  - theta notation
+    - this notation decides whether the upper and lower bounds of a given function (algorithm) are the same.
+    - if the upper bound and lower bound give the same result,then the theta notation will also have the same rate of growth.
+    - for example : f(n)=10n+n , its tight upper bound is O(n) and its tight lower bound is omega(n).
+    - if the upper bound and lower bound are not the same then the rate of growth for theta case may be not the same.In this case, we need to consider all the possible time complexities and take average of those.
+    - theta notation is defined as theta(g(n)) = {f(n):there exist positive constants c1,c2,n<sub>0</sub> such that 0<=c1g(n)<=f(n)<=c2g(n) for all n>=n<sub>0</sub> } 
+    - g(n) is asymptotic tight bound for f(n). theta(g(n)) is the set of functions with the same order of growth as g(n).
+    - ![theta function](images/theta.png)
+    
     
       
       
