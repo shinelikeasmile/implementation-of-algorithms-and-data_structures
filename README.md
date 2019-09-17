@@ -41,5 +41,18 @@ This repository contains the implementations of algorithms and data structures w
     - this notation gives the tight upper bound of the given function f(n).
     - represented as f(n) = O(g(n)) 
     - g(n) gives the maximum rate of growth for f(n) at larger values of n.
-    -
-  
+    - ![Big-O notation](images/bigO.png)
+    - O(g(n))= {f(n):there exist positive constants c and n<sub>0</sub> such that 0<=f(n)<=c*g(n) for all n>=n<sub>0</sub>}
+    - O(nlogn) : 3n-100,2n-1,100,100n,etc.
+    - n<sub>0</sub> is called threshold for the given function , it cannot be zero because it is the input size
+    - find upper bound for f(n)=n<sup>4</sup>+100n<sup>2</sup>+50
+      - solution : 
+      - n<sup>4</sup>+100n<sup>2</sup>+50 <= 2n<sup>4</sup> for all n>=11 
+      - n<sup>4</sup>+100n<sup>2</sup>+50 = O(n<sup>4</sup>) with c=2 & n<sub>0</sub>=11                                     
+    - there is no unique set of values for n<sub>0</sub> and c.
+  - Omega notation
+    - this notation gives the tighter lower bound of the given function f(n)
+    - represented as f(n) = omega(g(n))
+    - at larger values of n, the tighter lower bound of f(n) is g(n).
+    - omega(g(n)):{f(n):there exist positive constants c & n<sub>0</sub> such that 0<=c*g(n)<=f(n) for all n>=n<sub>0</sub>}
+    - 
