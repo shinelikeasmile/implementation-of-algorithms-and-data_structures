@@ -108,4 +108,4 @@ This repository contains the implementations of algorithms and data structures w
   - other important formulae
     - summation(logk) for 1<=k<=n =  nlogn(approx)
     - summation(k<sup>p</sup>) for 1<=k<=n : 1<sup>p</sup>+2<sup>p</sup> +...+ n<sup>p</sup> = (1/p+1)n<sup>p+1</sup> (apx)
-  -   
+-   
