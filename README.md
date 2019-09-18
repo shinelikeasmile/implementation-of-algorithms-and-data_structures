@@ -81,6 +81,31 @@ This repository contains the implementations of algorithms and data structures w
       - c1n<sup>2</sup> <= n <= c2n<sup>2</sup> => only holds for : n<=1/c1.(contradiction)
     - prove n is not equal to theta(logn)
       - c1logn <= n <= c2logn => c2 >= n/logn - impossible
-    
-      
-      
+- properties of asymptotic notations
+  - Transtivity : f(n) = theta(g(n)) and g(n) = theta(h(n)) => f(n) = theta(h(n)) valid for Big-O and Omega as well.
+  - Reflexivity : f(n) = theta(f(n)) valid for Big-O and Omega
+  - symmetry : f(n) = theta(g(n)) if and only if g(n) = theta(f(n)) , not valid for Big-O and Omega
+  - Transpose symmetry : f(n) = O(g(n)) if and only if g(n) = omega(f(n))
+  - if f(n) is in O(k.g(n)) for any constant k>0 , then f(n) is in O(g(n)).
+  - if f(n) is in O(g(n)) and f1(n) is in O(g1(n)) , then (f+f1)(n) is in O(max(g(n),g1(n))).
+  - if f1(n) is in O(g1(n)) and f2(n) is in O(g2(n)) , then f1(n)f2(n) is in O(g1(n)g2(n)).
+- logarithms
+  - logx<sup>y</sup> = ylogx               
+  - logn=log<sup>n</sup><sub>10</sub>
+  - logxy = logx + logy
+  - log<sup>k</sup>n = (logn)<sup>k</sup>
+  - loglogn = log(logn)
+  - logx/y = logx-logy
+  - a<sup>log<sup>x</sup><sub>b</sub></sup> = x<sup>log<sup>a</sup><sub>b</sub></sup>
+  - log<sup>x</sup><sub>b</sub> = log<sup>x</sup><sub>a</sub> / log<sup>b</sup><sub>a</sub>
+- important formulae
+  - arithmetic series
+    - summation(k) for 1=<k<=n : 1+2+3+4+5+.......+n = n(n+1)/2
+  - geometric series
+    - summation(x<sup>k</sup>) for 0<=k<=n : 1+x+x<sup>2</sup>....+x<sup>n</sup> = x <sup>n+1</sup>-1 / x-1 (x != 1)
+  - harmonic series
+    - summation(1/k) for 1<=k<=n : 1 + 1/2 + 1/3 + 1/4 + .. + 1/n = logn (approx)
+  - other important formulae
+    - summation(logk) for 1<=k<=n =  nlogn(approx)
+    - summation(k<sup>p</sup>) for 1<=k<=n : 1<sup>p</sup>+2<sup>p</sup> +...+ n<sup>p</sup> = (1/p+1)n<sup>p+1</sup> (apx)
+  -   
