@@ -123,10 +123,10 @@ This repository contains the implementations of algorithms and data structures w
 - master theorem for subtract and conquer recurrences
     - T(n) is a function defined on positive n and having the property
       -   T(n) = c if n<=1
-      -        = aT(n-b) + f(n) if n>1
-      - for some constants c,a>0,b>0,k>=0 and function f(n). if f(n) is in O(n<sup>k</sup>) then
+      -   T(n) = aT(n-b) + f(n) if n>1
+    - for some constants c,a>0,b>0,k>=0 and function f(n). if f(n) is in O(n<sup>k</sup>) then
       -   T(n) = O(n<sup>k</sup>), if a<1
-      -        = O(n<sup>k+1</sup>), if a=1
-      -        = O(n<sup>k</sup>a<sup>n/b</sup>) if a>1
+      -   T(n) = O(n<sup>k+1</sup>), if a=1
+      -   T(n) = O(n<sup>k</sup>a<sup>n/b</sup>) if a>1
          
       
