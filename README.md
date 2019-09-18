@@ -107,5 +107,17 @@ This repository contains the implementations of algorithms and data structures w
     - summation(1/k) for 1<=k<=n : 1 + 1/2 + 1/3 + 1/4 + .. + 1/n = logn (approx)
   - other important formulae
     - summation(logk) for 1<=k<=n =  nlogn(approx)
-    - summation(k<sup>p</sup>) for 1<=k<=n : 1<sup>p</sup>+2<sup>p</sup> +...+ n<sup>p</sup> = (1/p+1)n<sup>p+1</sup> (apx)
--   
+    - summation(k<sup>p</sup>) for 1<=k<=n : 1<sup>p</sup>+2<sup>p</sup> +...+ n<sup>p</sup> = (1/p+1)n<sup>p+1</sup>(apx)
+- Master theorem for divide and conquer recurrences
+  - this theorem can be used to determine the running time of divide and conquer algorithms.
+  - first, try to find the recurrence relation for the problem
+  - if the recurrence relation is of the form T(n) = aT(n/b) + theta(n<sup>k</sup>log<sup>p</sup>n) where a>=1,b>1,k>=0 and p is a real number, then:
+    - if a>b<sup>k</sup> , then T(n) = theta(n<sup>log<sub>b</sub>a</sup>)
+    - if a=b<sup>k</sup> ,
+         1. if p>-1 , then T(n) = theta( n<sup>log<sub>b</sub>a</sup> log<sup>p+1</sup>n )
+         2. if p=-1 , then T(n) = theta( n<sup>log<sub>b</sub>a</sup> loglogn )
+         3. if p<-1 , then T(n) = theta( n<sup>log<sub>b</sub>a</sup> )
+    - if a<b<sup>k</sup> ,
+         1. if p>=0 , then T(n) = theta( n<sup>k</sup>log<sup>p</sup>n )
+         2. if p<0 , then T(n) = O( n<sup>k</sup> )
+     
