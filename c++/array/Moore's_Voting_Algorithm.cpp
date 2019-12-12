@@ -14,3 +14,34 @@
 //                           set count = count+1
 //                        else 
 //                           set count = count-1
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+        int n;
+        // size of the array.
+        cin>>n;
+        vector<int>array(n);
+        for(int i=0;i<n;i++)
+        {
+           cin>>array[i];
+        }
+        //Moore's voting algorithm implementation
+        int count=0,candidate;
+        for(int i=0;i<n;i++)
+        {
+          if(count==0){candidate=array[i];count=1;}
+          else
+          {   
+            if(candidate==array[i])count++;
+            else count--;
+          }
+        }
+        count =0;
+        for(int i=0;i<n;i++)
+        {
+          if(candidate==array[i])count++;
+        }
+        if (count>n/2) cout<<"candidate is :"<<array[candidate]<<endl;
+        else cout<<"no candidate";
+}
