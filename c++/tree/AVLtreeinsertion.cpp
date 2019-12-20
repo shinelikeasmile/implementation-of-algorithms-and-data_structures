@@ -78,7 +78,7 @@ Node* insert(Node *root,int key)
 		}
 		else //RL
 		{
-			RightR(root->left);
+			RightR(root->right);
 			return LeftR(root);
 		}
 	}
