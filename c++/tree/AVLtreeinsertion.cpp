@@ -66,7 +66,7 @@ Node* insert(Node *root,int key)
 		}
 		else //LR
 		{
-			LeftR(root->left);
+			root->left=LeftR(root->left);
 			return RightR(root);
 		}
 	}
@@ -78,7 +78,7 @@ Node* insert(Node *root,int key)
 		}
 		else //RL
 		{
-			RightR(root->right);
+			root->right=RightR(root->right);
 			return LeftR(root);
 		}
 	}
@@ -87,9 +87,14 @@ Node* insert(Node *root,int key)
 void preorder(Node *root)
 {
 	if(root!=NULL){
-	cout<<root->value;
+	cout<<root->value<<" ";
 	preorder(root->left);
 	preorder(root->right);}
+}
+int count_nodes(Node* root)
+{
+	if(root==NULL)return 0;
+	return count_nodes(root->left)+count_nodes(root->right)+1;
 }
 int main()
 {
