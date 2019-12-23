@@ -22,14 +22,14 @@
 		for(unsigned int i=0;i<v.size();i++)
 		{
 			sum+=v[i];
-			m[sum]=i;
-			if(sum==r){for(auto itr=v.begin();itr<=v.begin()+i;itr++)cout<<*itr<<" ";}
+			cout<<sum<<endl;
+			if(sum==r){for(auto itr=v.begin();itr<=v.begin()+i;itr++)cout<<*itr<<" ";break;}
 			else if(m.find(sum-r)!=m.end())
 			{
 				for(auto itr=v.begin()+m.find(sum-r)->second+1;itr<=v.begin()+i;itr++)cout<<*itr<<" ";
 				break;			
 			}
-			else{}
+			else{m[sum]=i;}
 		}
 		
 	}
