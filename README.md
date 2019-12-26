@@ -1,5 +1,5 @@
 # implementation-of-algorithms-and-datastructures
-This repository contains the implementations of algorithms and data structures written in c++ and python.
+This repository contains implementations of algorithms and data structures written in c++ and python.
 
 # Introduction to Algorithms Analysis
 - A data type in a programming language is a set of data with predefined values.
