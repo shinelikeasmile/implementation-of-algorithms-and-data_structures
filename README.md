@@ -1,4 +1,4 @@
-# implementation-of-algorithms-and-datastructures
+# implementations-of-algorithms-and-datastructures
 This repository contains implementations of algorithms and data structures written in c++ and python.
 
 # Introduction to Algorithms Analysis
