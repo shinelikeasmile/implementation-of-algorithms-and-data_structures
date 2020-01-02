@@ -1,3 +1,5 @@
+#suppose you have a linked list where the value of each node is a sorted linked list (i.e nested list).
+#our task is to flatten this nested list that is , to combine all nested lists into a single sorted linked list.
 class Node:
 	def __init__(self,value):
 		self.value=value
@@ -61,5 +63,3 @@ node=flat.head
 while node is not None:
 	print node.value
 	node=node.next
-
-
