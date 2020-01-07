@@ -81,7 +81,7 @@ class Tree:
 						parent=rightsuccessor
 						rightsuccessor=rightsuccessor.left
 					node.value=rightsuccessor.value
-					parent.left=None
+					parent.left=rightsuccessor.right
 				else:
 					if parent.left==node:
 						parent.left=node.left
