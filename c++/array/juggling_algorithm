@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+int gcd(int a,int b)
+{
+	if(b==0)
+	{
+		return a;
+	}
+	else
+	{
+		return gcd(b,a%b);
+	}
+}
+void PrintArray(int arr[],int n)
+{
+	for(int i=0;i<n;i++)
+	{
+		cout<<arr[i]<<" ";
+	}
+	
+}	
+void LeftRotate(int arr[],int n,int d)
+{
+	int sets=gcd(n,d);
+	for(int i=0;i<sets;i++)
+	{
+		int temp=arr[i];
+		int j=i;
+		while(1)
+		{
+			int k=j+d;
+			if(k>=n)
+				k=k%n;
+			if(k==i)
+				break;
+			arr[j]=arr[k];
+			j=k;
+		}
+		arr[j]=temp;
+		cout<<"\n";
+	}
+}
+int main()
+{
+	int arr[]={1,2,3,4,5,6,7,8};
+	LeftRotate(arr,8,6);
+	PrintArray(arr,8);
+	
+}
