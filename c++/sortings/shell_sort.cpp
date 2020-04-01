@@ -11,7 +11,7 @@ void shellsort(vector<int>&array,int N)
 			int j=i-gap;
 			while(j>=0)
 			{
-				if(array[i]<array[j])
+				if(temp<array[j])
 				{
 					array[j+gap]=array[j];
 					j=j-gap;
