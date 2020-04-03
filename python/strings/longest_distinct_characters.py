@@ -1,0 +1,14 @@
+T=int(input())
+while(T):
+	s=input()
+	i=0
+	start=0
+	count=0
+	while(i<len(s)):
+		if(s[start:i].find(s[i])!=-1):
+			if(count<(i-start)):
+				count=i-start
+			start=start+s[start:i].find(s[i])+1
+		i+=1
+	print(count)
+	T-=1
